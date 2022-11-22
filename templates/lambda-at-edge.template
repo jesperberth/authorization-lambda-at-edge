@@ -55,7 +55,7 @@ Resources:
     Properties: 
       Handler: index.handler
       Role: !GetAtt UpdateConfigExecutionRole.Arn
-      Runtime: python3.6
+      Runtime: python3.7
       Timeout: 60
       MemorySize: 1536
       Code: 
