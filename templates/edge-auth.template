@@ -12,7 +12,7 @@ Parameters:
   ArtifactsBucket:
     Description: S3 bucket with artifact files (Lambda functions, html files, JS code, etc.)
     Type: String
-    Default: cloudfront-blog-resources
+    Default: jesbetemplate
     AllowedPattern: ^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$
     ConstraintDescription: ArtifactsBucket S3 bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).
   ArtifactsPrefix:
@@ -24,7 +24,7 @@ Parameters:
   TemplatesBucket:
     Description: S3 bucket with CloudFormation templates for nested stacks
     Type: String
-    Default: cloudfront-blog-resources
+    Default: jesbetemplate
     AllowedPattern: ^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$
     ConstraintDescription: TemplatesBucket S3 bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).
   TemplatesPrefix:
